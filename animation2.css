@@ -1,0 +1,113 @@
+*
+{
+    margin: 0px;
+    box-sizing: border-box;
+    padding: 0px;
+}
+
+#canvas
+{
+    border: 2px solid black;
+height: 100vh;
+width: 100vw;
+position: relative;
+background-color: skyblue;
+
+}
+ /* animation : duration | easing-function | delay | 
+        iteration-count | direction | fill-mode | play-state | name  */
+#sun
+{
+   
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    top:100px;
+border-radius: 50%;
+background-color: orangered;
+animation: 3s linear forwards sgo ;
+}
+#moon
+{
+    
+    position: absolute;
+    bottom: 0;
+    right: 20px;
+    height: 100px;
+    width: 100px;
+border-radius: 50%;
+background-color: rgb(173, 211, 216);
+animation: 4s linear 1s forwards  mgo ;
+}
+#land
+{
+    position: absolute;
+    width: 100vw;
+    height: 200px;
+    background-color: green;
+    bottom: 0px;
+}
+#road
+{
+    height: 20px;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    top:50%;
+    
+}
+#zebra
+{
+height: 2px;
+width: 100vw;
+background-color: white;
+border: 2px dotted ;
+position: relative;
+top: 40%;
+}
+#character
+{
+position: relative;
+bottom: 50px;
+animation: 5s linear forwards mariogo;
+}
+#mario
+{
+    display: inline-block;
+    width:50px;
+    height: 50px;
+}
+@keyframes sgo 
+{
+from
+{
+    top:100px;
+}   
+to
+{
+   top: 100vh;
+} 
+}
+@keyframes mgo 
+{
+from
+{
+    bottom:0px;
+}   
+to
+{
+   bottom:80vh;
+} 
+}
+@keyframes mariogo
+{
+from{
+    bottom: 50px;
+    left: 0px;
+}   
+to
+{
+    bottom: 50px;
+    left: 95vw;
+} 
+}
